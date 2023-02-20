@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  * Prints all the numbers of base 16 in lowercase
- * return: 0 (SUCCESS)
+ * Return: 0 (SUCCESS)
  */
 int main(void)
 {
