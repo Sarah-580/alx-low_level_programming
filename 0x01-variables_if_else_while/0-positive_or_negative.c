@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  * Program assigns a random number; positive, zero, negative
- * return: 0 (SUCCESS)
+ * Return: 0 (SUCCESS)
  */
 int main(void)
 {
