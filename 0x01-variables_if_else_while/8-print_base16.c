@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.>h
 #include <unistd.h>
 /**
  * main - Entry point
@@ -15,7 +15,7 @@ int main(void)
 		putchar(d);
 		d++;
 	}
-	
+
 	for (c = 'a'; c <= 'f'; c++)
 	{
 		putchar(c);
