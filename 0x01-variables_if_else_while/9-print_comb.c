@@ -3,13 +3,13 @@
 /**
  * main - Entry point
  * Prints all possible combinations of single-digit numbers
- * Return : 0 (SUCCESS)
+ * Return: 0 (SUCCESS)
  */
 int main(void)
 {
 	int i;
 	
-	for (i - '0'; i <= '9'; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
 		putchar(i);
 
