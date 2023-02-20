@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
  * main - C programming entry point
- * return: 0 (success)
+ * Return: 0 (SUCCESS)
  */
-
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
