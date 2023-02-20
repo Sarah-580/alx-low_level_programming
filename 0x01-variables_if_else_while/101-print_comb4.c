@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  * Prints 3 combination of numbers
