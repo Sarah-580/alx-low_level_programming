@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  * Prints alphabets in lowercase, then in uppercase
- * Retrun: 0 (SUCCESS)
+ * Return: 0 (SUCCESS)
  */
 int main(void)
 {
