@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
  * main - Entry point
  * Prints all possible combinations of single-digit numbers
@@ -8,7 +7,7 @@
 int main(void)
 {
 	int i;
-	
+
 	for (i = '0'; i <= '9'; i++)
 	{
 		putchar(i);
