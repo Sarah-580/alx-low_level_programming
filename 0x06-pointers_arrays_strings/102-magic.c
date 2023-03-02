@@ -10,15 +10,10 @@ int main(void)
 	p = &n;
 /*
  * main - program prints a[2] = 98
- * write your line of code here...
- * Remember:
- * - you are not allowed to use a
- * - you are not allowed to modify p
- * - only one statement
- * - you are not allowed to code anything else than this line of code
- *   Return: 0 (SUCCESS)
+ *
+ * Return: 0 (SUCCESS)
  */
-	*(p + 5) = 988888888;
+	*(p + 5) = 98;
 	/* ...so that this prints 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
