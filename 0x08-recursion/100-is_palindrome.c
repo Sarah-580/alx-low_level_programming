@@ -1,7 +1,8 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strlen - return length of string
- * @str: string 
+ * @str: string
  * Return: length of str
  */
 int _strlen(char *str)
@@ -24,8 +25,7 @@ int check_palindrome(int a, int b, char *c)
 	if (a >= b)
 		return (1);
 	else if (c[a] != c[b])
-	       return (0);
-	else
+		return (0);
 	return (check_palindrome(a + 1, b - 1, c));
 }
 
@@ -38,6 +38,6 @@ int is_palindrome(char *s)
 {
 	int i;
 
-	i = _strlen(s) -1;
+	i = _strlen(s) - 1;
 	return (check_palindrome(0, i, s));
 }
