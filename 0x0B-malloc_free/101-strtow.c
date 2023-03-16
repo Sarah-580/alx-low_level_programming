@@ -11,13 +11,13 @@ int wrdcnt(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		 if (s[i] == ' ')
-		 {
-			 if (s[i + 1] != ' ' && s[i + 1] != '\0')
-				 n++;
-		 }
-		 else if (i == 0)
-			 n++;
+		if (s[i] == ' ')
+		{
+			if (s[i + 1] != ' ' && s[i + 1] != '\0')
+				n++;
+		}
+		else if (i == 0)
+			n++;
 	}
 	n++;
 	return (n);
