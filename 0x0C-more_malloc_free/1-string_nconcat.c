@@ -35,12 +35,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (concat == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	memcpy(concat, s1, len1);
 	memcpy(concat + len1, s2, n);
 	concat[len1 + n] = '\0';
 
-	return concat;
+	return (concat);
 }

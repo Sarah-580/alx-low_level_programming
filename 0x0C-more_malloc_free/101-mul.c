@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - multiplies two positive numbers
  * is_positive_digit - multiplies two positive numbers
+ * main - entry point
  * @str: string
  * @argc: argument count
  * @argv: argument vector
@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
 	char *num1_str = argv[1];
 	char *num2_str = argv[2];
 
-	int num1 = atoi (num1_str);
-	int num2 = atoi (num2_str);
-	int result = num1 *num2;
+	int num1 = atoi(num1_str);
+	int num2 = atoi(num2_str);
+	int result = num1 * num2;
 
 	if (argc != 3)
 	{
