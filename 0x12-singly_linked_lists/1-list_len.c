@@ -15,7 +15,7 @@ size_t print_list(const list_t *h)
 	while (current != NULL)
 	{
 		count++;
-		current = current->next;
+		h = h->next;
 	}
 	return (count);
 }
