@@ -11,7 +11,7 @@ void shash_table_delete(shash_table_t *ht);
  * shash_table_create - creates a sorted hash table
  * @size: the size of new sorted hash table
  * Return: if error occurs - NULL
- * 	otherwise - a pointer to the new sorted hash table
+ * otherwise - a pointer to the new sorted hash table
  */
 
 shash_table_t *shash_table_create(unsigned long int size)
@@ -19,7 +19,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 	shash_table_t *ht;
 	unsigned long int i;
 
-	ht = malloc(sizeof(shash_tables_t));
+	ht = malloc(sizeof(shash_table_t));
 	if (ht == NULL)
 		return (NULL);
 
@@ -51,7 +51,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	char *value_copy;
 	unsigned long int index;
 
-	if (ht == NULL || key == NULL *key == '\0' | value == NULL)
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
 
 	value_copy = strdup(value);
@@ -68,7 +68,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			tmp->value = value_copy;
 			return (1);
 		}
-		tmp tmp->snext;
+		tmp = tmp->snext;
 	}
 
 	new = malloc(sizeof(shash_node_t));
@@ -122,13 +122,13 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 /**
  * shash_table_get - retrieve the value associated with
- * 	a key in a sorted hash table
+ * a key in a sorted hash table
  * @ht: pointer to the sorted hash table
  * @key:
  * key to get value of
  *
  * Return: if the key cannot be matched _ NULL
- * 	Otherwise - the value associated with the key in ht
+ * Otherwise - the value associated with the key in ht
  */
 
 char *shash_table_get(const shash_table_t *ht, const char *key)
